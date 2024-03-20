@@ -1,0 +1,226 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.oscuro{
+    background-color: rgb(22, 21, 22);
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Estilos de la barra de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s; /* Agrega una transición suave al color al pasar el mouse */
+}
+
+nav a:hover {
+    color: #c3c1be;
+}
+nav li:hover {
+    transform: scale(1.1); /* Agranda el elemento al pasar el mouse */
+}
+#luna{
+    float: right;
+    position: absolute;
+    cursor: pointer;
+}
+#sol{
+    float: right;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos de contenedores */
+.container {
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* background-image: url(IMAGENES/fotoGrande\(carrusel1\).png);*/
+    background-image: linear-gradient(#cc00ff,#a8af97 );
+    border-radius: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+#titulo{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+/* Estilos de formularios */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos de la caja de comentarios */
+.comment-box {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+#comment-form input,
+#comment-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#submit-comment {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-comment:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos de los comentarios */
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Media query para el iPhone 12 Pro */
+@media only screen and (max-width: 428px) {
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .container {
+        margin-bottom: 10px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    input[type="submit"],
+    button {
+        padding: 8px 16px;
+    }
+}

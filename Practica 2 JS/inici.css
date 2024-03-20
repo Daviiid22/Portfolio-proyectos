@@ -1,0 +1,185 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente para todo el documento */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+.oscuro{
+    background-color: rgb(22, 21, 22);
+}
+
+/* Estilos para las imágenes */
+img {
+    border-radius: 10px; /* Agrega esquinas redondeadas a todas las imágenes */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    padding: 10px 0; /* Relleno superior e inferior de 10px y relleno izquierdo y derecho de 0 */
+    height: 35px; /* Altura del encabezado */
+    display: flex; /* Establece el modelo de caja flexible para el encabezado */
+    justify-content: space-around; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+/* Estilos de la barra de navegación */
+nav ul {
+    list-style-type: none; /* Elimina los marcadores de lista */
+    margin: 0; /* Elimina los márgenes */
+    padding: 0; /* Elimina el relleno */
+    display: flex; /* Establece el modelo de caja flexible para la lista de navegación */
+}
+
+nav li {
+    margin-right: 20px; /* Espacio entre los elementos de la lista de navegación */
+}
+
+nav a {
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    color: #fff; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Agrega una transición suave al color al pasar el mouse */
+}
+
+nav a:hover {
+    color: #c3c1be; /* Cambia el color del texto al pasar el mouse */
+}
+
+nav li:hover {
+    transform: scale(1.1); /* Agranda el elemento al pasar el mouse */
+}
+#luna{
+    float: right;
+    position: absolute;
+    cursor: pointer;
+}
+#sol{
+    float: right;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* Estilos de la foto grande */
+.fotoGrande {
+    display: flex; /* Establece el modelo de caja flexible */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 700px; /* Altura de la sección de la foto grande */
+}
+
+.fotoGrande img {
+    margin-top: 35px; /* Espacio superior */
+    width: 1000px; /* Ancho de la imagen */
+    height: 600px; /* Altura de la imagen */
+    min-width: 10px; /* Ancho mínimo de la imagen */
+    border: 2px black solid; /* Borde de la imagen */
+}
+
+/* Estilos de las imágenes con la clase "Jude" */
+.Jude {
+    border-radius: 10px; /* Agrega esquinas redondeadas */
+    position: absolute; /* Posiciona de forma absoluta */
+}
+
+.Jude:hover{
+    transform: scale(1.09); /* Escala la foto al 109% al pasar el ratón sobre ella */
+}
+
+/* Estilos del título h1 */
+#tituloh1 {
+    color: rgb(78, 78, 167); /* Color del texto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fuente */
+    text-align: center; /* Alineación del texto */
+}
+
+/* Estilos de la segunda fila de imágenes */
+.fila2 {
+    display: flex; /* Establece el modelo de caja flexible */
+    justify-content: space-around; /* Espacio entre las imágenes */
+    margin-top: 50px; /* Espacio superior */
+}
+
+.fila2 img {
+    transition: all .5s; /* Transición suave */
+    border: 2px black solid; /* Borde de la imagen */
+}
+
+.fila2 img:hover {
+    transform: scale(1.09); /* Escala la imagen al 109% al pasar el ratón sobre ella */
+}
+
+/* Estilos de los títulos */
+.titulos {
+    display: flex; /* Establece el modelo de caja flexible */
+    justify-content: space-around; /* Espacio entre los títulos */
+    margin-left: 50px; /* Margen izquierdo */
+    text-align: center; /* Alineación del texto */
+    color: rgb(78, 78, 167); /* Color del texto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fuente */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Relleno superior e inferior de 20px */
+}
+
+.footer-content {
+    display: flex; /* Establece el modelo de caja flexible */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente */
+}
+
+.footer-content p {
+    margin: 0; /* Elimina el margen */
+}
+
+.footer-content ul {
+    list-style-type: none; /* Elimina los marcadores de lista */
+    margin: 0; /* Elimina los márgenes */
+    padding: 0; /* Elimina el relleno */
+}
+
+.footer-content li {
+    display: inline; /* Muestra los elementos en línea */
+    margin-right: 15px; /* Espacio entre los elementos */
+}
+
+.footer-content a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
+}
+
+/* Estilos específicos para iPhone 12 Pro */
+@media screen and (min-width: 375px) and (max-width: 431px) {
+    .logo img {
+        width: 25px; /* Ancho de la imagen del logo */
+    }
+    .fotoGrande img {
+        width: 90%; /* Ancho de la imagen al 90% */
+        height: auto; /* Altura automática */
+    }
+    .fila2 {
+        display: flex; /* Establece el modelo de caja flexible */
+        flex-direction: column; /* Cambia la dirección del flujo a columna */
+        align-items: center; /* Centra horizontalmente */
+    }
+    .fila2 img {
+        width: 80%; /* Ancho de la imagen al 80% */
+        margin-bottom: 20px; /* Espacio inferior */
+    }
+    .fila2 a {
+        text-align: center; /* Alineación del texto */
+    }
+    .titulos {
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+}

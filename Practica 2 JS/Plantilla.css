@@ -1,0 +1,811 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.oscuro{
+    background-color: rgb(22, 21, 22);
+}
+img{
+    border-radius: 10px;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    height: 35px;
+    display: flex;
+    justify-content: space-around; /* Centra los elementos horizontalmente */
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s; /* Agrega una transición suave al color al pasar el mouse */
+}
+nav a:hover {
+    color: #c3c1be;
+}
+nav li:hover {
+    transform: scale(1.1); /* Agranda el elemento al pasar el mouse */
+}
+#luna{
+    float: right;
+    position: absolute;
+    cursor: pointer;
+}
+#sol{
+    float: right;
+    position: absolute;
+    cursor: pointer;
+}
+.plantilla{
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.titulo{
+    margin-left: 30px;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgoldenrod;
+}
+.porteros{
+    display: flex;
+    justify-content: space-around;
+}
+.porteros img{
+    border-radius: 10px;
+    border: 2px black solid;
+    background: linear-gradient(rgba(185, 185, 194), rgb(38, 38, 163));
+    transition: all .5s;
+    position: relative;
+}
+.porteros img:hover{
+    transform: scale(1.09);
+}
+.uno{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 13%;
+    top: 75%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.uno h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.uno p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.dos{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 46%;
+    top: 75%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.dos h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.dos p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.tres{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 77%;
+    top: 75%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.tres h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.tres p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+hr{
+    border: #000 solid 2px;
+}
+.titulo2{
+    margin-left: 30px;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgoldenrod;
+}
+.defensa{
+    display: flex;
+    justify-content: space-around;
+}
+.defensa img{
+    border-radius: 10px;
+    border: 2px black solid;
+    background: linear-gradient(rgba(185, 185, 194), rgb(38, 38, 163));
+    transition: all .5s;
+    position: relative;
+}
+.defensa img:hover{
+    transform: scale(1.09);
+}
+.cuatro{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 8.5%;
+    top: 155%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cuatro h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.cuatro p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.cinco{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 33.5%;
+    top: 155%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cinco h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.cinco p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.seis{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 60%;
+    top: 155%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.seis h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.seis p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.siete{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 85%;
+    top: 155%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.siete h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.siete p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.defensa2{
+    display: flex;
+    justify-content: space-around;
+}
+.defensa2 img{
+    border-radius: 10px;
+    border: 2px black solid;
+    background: linear-gradient(rgba(185, 185, 194), rgb(38, 38, 163));
+    transition: all .5s;
+    position: relative;
+}
+.defensa2 img:hover{
+    transform: scale(1.09);
+}
+.ocho{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 8%;
+    top: 206%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ocho h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.ocho p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.nueve{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 32%;
+    top: 206%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nueve h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.nueve p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.diez{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 58%;
+    top: 206%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.diez h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.diez p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.once{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 83%;
+    top: 206%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.once h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.once p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.titulo3{
+    margin-left: 30px;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgoldenrod;
+}
+.centro1{
+    display: flex;
+    justify-content: space-around;
+}
+.centro1 img{
+    border-radius: 10px;
+    border: 2px black solid;
+    background: linear-gradient(rgba(185, 185, 194), rgb(38, 38, 163));
+    transition: all .5s;
+    position: relative;
+}
+.centro1 img:hover{
+    transform: scale(1.09);
+}
+.doce{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 7.5%;
+    top: 287%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.doce h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.doce p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.trece{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 34.5%;
+    top: 287%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.trece h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.trece p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.catorce{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 58%;
+    top: 287%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.catorce h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.catorce p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.quince{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 82%;
+    top: 287%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.quince h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.quince p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.centro2{
+    display: flex;
+    justify-content: space-around;
+}
+.centro2 img{
+    border-radius: 10px;
+    border: 2px black solid;
+    background: linear-gradient(rgba(185, 185, 194), rgb(38, 38, 163));
+    transition: all .5s;
+    position: relative;
+}
+.centro2 img:hover{
+    transform: scale(1.09);
+}
+.dseis{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 7%;
+    top: 338%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.dseis h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.dseis p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.dsiete{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 31%;
+    top: 338%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.dsiete h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.dsiete p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.docho{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 56%;
+    top: 338%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.docho h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.docho p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.dnueve{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 82%;
+    top: 338%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.dnueve h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.dnueve p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.titulo4{
+    margin-left: 30px;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgoldenrod;
+}
+.del{
+    display: flex;
+    justify-content: space-around;
+}
+.del img{
+    border-radius: 10px;
+    border: 2px black solid;
+    background: linear-gradient(rgb(185, 185, 194), rgb(38, 38, 163));
+    transition: all .5s;
+    position: relative;
+}
+.del img:hover{
+    transform: scale(1.09);
+}
+.veinte{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 9%;
+    top: 418%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.veinte h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.veinte p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.vuno{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 32.5%;
+    top: 418%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.vuno h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.vuno p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.vdos{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 58%;
+    top: 418%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.vdos h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.vdos p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.vtres{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 83%;
+    top: 418%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.vtres h3{
+    font-size: 3em;
+    -webkit-text-stroke: 2px #000; /* Ancho y color del borde */
+}
+.vtres p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+.titulo5{
+    margin-left: 30px;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgoldenrod;
+}
+.ct{
+    display: flex;
+    justify-content: space-around;
+}
+.ct img{
+    border-radius: 10px;
+    border: 2px black solid;
+    background: linear-gradient(rgba(185, 185, 194), rgb(38, 38, 163));
+    transition: all .5s;
+    position: relative;
+}
+.ct img:hover{
+    transform: scale(1.09);
+}
+.vcuatro{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    top: 500%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.vcuatro p{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    -webkit-text-stroke: 1px #000; /* Ancho y color del borde */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content p {
+    margin: 0;
+}
+.footer-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-content li {
+    display: inline;
+    margin-right: 15px;
+}
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-content a:hover {
+    text-decoration: underline;
+}
+/*Iphone12 Pro*/
+@media screen and (min-width: 375px) and (max-width: 431px) {
+    .titulo h4{
+        font-size: 30px;
+    }
+    .porteros img{
+        width: 100px;
+        height: auto;
+    }
+    .porteros article{
+        top: 43%;
+        margin-left: -10px;
+    }
+    .porteros article h3{
+        font-size: 12px;
+        font-family: Helvetica, sans-serif;
+    }
+    .porteros article p{
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .titulo2 h4{
+        font-size: 30px;
+    }
+    .defensa img{
+        width: 80px;
+        height: auto;
+    }
+    .defensa article{
+        top: 77%;
+        margin-left: -10px;
+    }
+    .defensa article h3{
+        font-size: 12px;
+    }
+    .defensa article p{
+        font-size: 12px;
+    }
+    .defensa2 img{
+        width: 80px;
+        height: auto;
+    }
+    .defensa2 article{
+        top: 92%;
+        margin-left: -10px;
+    }
+    .defensa2 article h3{
+        font-size: 12px;
+    }
+    .defensa2 article p{
+        font-size: 12px;
+    }
+    .titulo3 h4{
+        font-size: 30px;
+    }
+    .centro1 img{
+        width: 80px;
+        height: auto;
+    }
+    .centro1 article{
+        top: 125%;
+        margin-left: -6px;
+    }
+    .centro1 article h3{
+        font-size: 12px;
+    }
+    .centro1 article p{
+        font-size: 12px;
+    }
+    .centro2 img{
+        width: 80px;
+        height: auto;
+    }
+    .centro2 article{
+        top: 140%;
+        margin-left: -10px;
+    }
+    .centro2 article h3{
+        font-size: 12px;
+    }
+    .centro2 article p{
+        font-size: 12px;
+    }
+    .titulo4 h4{
+        font-size: 30px;
+    }
+    .del img{
+        width: 80px;
+        height: auto;
+    }
+    .del article{
+        top: 174%;
+        margin-left: -6px;
+    }
+    .del article h3{
+        font-size: 12px;
+    }
+    .del article p{
+        font-size: 12px;
+    }
+    .titulo5 h4{
+        font-size: 30px;
+    }
+    .ct img{
+        width: 100px;
+        height: auto;
+    }
+    .ct article{
+        top: 210%;
+        left: 42%;
+    }
+    .ct article p{
+        font-size: 12px;
+    }
+    .footer-content{
+        text-align: center;
+    }
+}

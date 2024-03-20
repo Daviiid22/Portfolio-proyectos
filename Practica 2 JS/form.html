@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Practica</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="inici.html">
+                <img src="IMAGENES/escudo.png" alt="Logo" width="35">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="TItulos.html">Titulos</a></li>
+                <li><a href="Plantilla.html">Plantilla actual</a></li>
+                <li><a href="form.html">Formulario</a></li>
+                <li>
+                    <img onclick="estilos1()" id="luna" src="IMAGENES/luna.png" alt="" width="25">
+                    <img onclick="estilos2()" id="sol" src="IMAGENES/sol.png" alt="" width="25" style="display: none;">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="titulo">Formulario de Contacto</h2>
+        <div class="container">
+            <form id="contactForm">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="E-Mail" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="3" required placeholder="Mesajes privados"></textarea>
+                <input type="submit" value="Enviar" onclick="formulario()">
+            </form>
+        </div>
+        <br>
+        <div class="comment-box">
+            <h2>Deja un comentario</h2>
+            <form id="comment-form">
+              <input type="text" id="nombre2" placeholder="Tu nombre">
+              <textarea id="comentario" placeholder="Escribe tu comentario aquí..."></textarea>
+              <button type="button" id="submit-comment" onclick="AgregarComentarios()">Comentar</button>
+            <!--  <button type="button" id="borrarStorage" onclick="borrarStorage()">Borrar Storage</button>  x-->
+            </form>
+            <br>
+            <div id="comment-section">
+              
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Mi Sitio Web</p>
+            <ul>
+                <li><a href="#">Términos de Servicio</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="form.js"></script>
+</body>
+</html>
