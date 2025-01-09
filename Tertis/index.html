@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="tetris.css">
+</head>
+<body>
+    <!-- Título principal -->
+    <h1>Tetris Game</h1>
+
+    <div id="game-container">
+        <!-- Panel izquierdo: Instrucciones -->
+        <div id="instructions">
+            <h2>Instrucciones</h2>
+            <p><strong>Teclas de control:</strong></p>
+            <ul>
+                <li><strong>A:</strong> Mover a la izquierda</li>
+                <li><strong>D:</strong> Mover a la derecha</li>
+                <li><strong>S:</strong> Acelerar descenso</li>
+                <li><strong>W:</strong> Rotar pieza</li>
+            </ul>
+            <p>¡Llena filas completas para ganar puntos!</p>
+        </div>
+
+        <!-- Panel central: Tablero del juego -->
+        <div id="tetris-container">
+            <canvas id="tetris" width="300" height="600"></canvas>
+            <div id="controls">
+                <button id="startButton" onclick="jugar()">Iniciar Juego</button>
+            </div>
+        </div>
+
+        <!-- Panel derecho: Puntuación y próxima ficha -->
+        <div id="right-panel">
+            <div id="puntuacion">Puntuación: 0</div>
+            <canvas id="proximaFicha" width="90" height="90"></canvas>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
